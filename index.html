@@ -336,6 +336,125 @@ textarea.inp{min-height:70px;resize:vertical}
   tr{break-inside:avoid}
   :root,html[data-theme="dark"]{--bg:#fff;--surface:#fff;--surface2:#f6f7f9;--text:#000;--text2:#333;--text3:#666;--border:#ccc}
 }
+/* ── v004: 노안 배려 가독성 (큰 글자·진한 글자·넓은 터치 영역) ── */
+:root{--text2:#2F3A4D;--text3:#566174;--border:#DCE2EB;--border2:#BFC9D7}
+html[data-theme="dark"]{--text2:#C8D1DE;--text3:#9AA6B9}
+body{font-size:17px;font-weight:500;line-height:1.6;letter-spacing:-.005em}
+.sm{font-size:15px}.xs{font-size:14px}
+.ph .eyebrow{font-size:15px}.ph h1{font-size:28px}.ph p{font-size:16px}
+@media(min-width:960px){.ph h1{font-size:34px}}
+.card{padding:22px}.card-h h3{font-size:19px}.card-h .sub{font-size:14.5px}.link{font-size:15.5px}
+.btn{min-height:54px;font-size:17px;font-weight:700;border-radius:14px}
+.btn.sm{min-height:44px;font-size:15px;padding:0 14px}
+.iconbtn{width:48px;height:48px}
+.badge{font-size:14px;padding:4px 11px}
+.hero .lbl{font-size:15.5px}.hero .nums b{font-size:42px}.hero .nums span{font-size:15px}.hero p{font-size:16px;color:#DCE5F7}
+.ring .t b{font-size:28px}.ring .t span{font-size:13px}
+.kpi .h{font-size:15.5px;color:var(--text2)}.kpi .v{font-size:32px}.kpi .f{font-size:14px}
+.legend div{font-size:15.5px}
+.rowbtn{padding:15px 4px}.rowbtn .tx b{font-size:17.5px}.rowbtn .tx span{font-size:15px}.rowbtn .cnt{font-size:15.5px}
+.quote{font-size:19px}
+.catcard .top b{font-size:19px}.catcard .top span{font-size:15px}.catcard p{font-size:15.5px}.catcard .nx{font-size:15.5px}
+.segs i{height:7px}
+.stepper .st{font-size:13.5px}.stepper .dot{width:28px;height:28px;font-size:13px}.stepper .st::before{top:13px}
+.mode b{font-size:17px}.mode span{font-size:14.5px}
+.sec-t{font-size:15px}
+.s-top .tt b{font-size:18px}.s-top .tt span{font-size:15px}
+.timer{font-size:16px;padding:8px 12px}
+.prog{height:10px}
+.flash{min-height:340px}.flash .term{font-size:46px}.flash .pron{font-size:18px}.flash .hint{font-size:15px}
+.speak{font-size:15.5px;padding:9px 15px}
+.two .btn{min-height:60px;font-size:18px}
+.qtype{font-size:15px}.prompt{font-size:23px;line-height:1.55}.prompt.term{font-size:38px}
+.opt{font-size:18.5px;min-height:64px;padding:14px 16px;font-weight:600}.opt .key{width:34px;height:34px;font-size:16px}
+.alert{font-size:16px}.alert b{font-size:18px}
+.spellin{font-size:26px}
+.exp-term{font-size:30px}.exp-pron{font-size:16px}.exp-k{font-size:20.5px}.exp-l{font-size:14.5px}.exp-sec p{font-size:17.5px;line-height:1.7}
+.tile{font-size:16px;min-height:92px}.tile.t{font-size:19px}
+.search input{font-size:17px;padding:15px 16px 15px 46px}
+.chip{font-size:15.5px;padding:8px 16px}
+.wl .it{padding:15px 18px}.wl .tx b{font-size:18px}.wl .tx em{font-size:15px}.wl .tx div{font-size:15.5px}
+.star{width:44px;height:44px}.star svg{width:22px;height:22px}
+table{font-size:15.5px}th{font-size:14px}.chart span{font-size:13px}
+.big-status{font-size:26px}.mini span{font-size:14px}.mini b{font-size:21px}
+.todo li{font-size:16px}
+.group h4{font-size:14.5px}.srow .tx b{font-size:17.5px}.srow .tx span{font-size:15px}
+.srow select,.srow input[type=date]{font-size:16px;padding:11px 14px}
+label.f{font-size:15.5px}.inp{font-size:17px}
+.toast{font-size:16px}.cheer{font-size:16.5px}
+nav.bottom button{font-size:13px;padding:10px 0 9px}nav.bottom svg.i{width:26px;height:26px}
+.side nav button{font-size:16.5px;padding:12px 14px}
+.brand{font-size:18px}.brand small{font-size:13px}
+.chip-streak{font-size:14.5px}.empty{font-size:16px}
+/* ── v004: 재미 요소 (레벨·XP·미션·잔디·배지·콤보·축하) ── */
+.lvchip{display:inline-flex;align-items:center;gap:8px;padding:5px 14px 5px 5px;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-weight:700;font-size:15px;box-shadow:var(--shadow)}
+.lvchip .lv{min-width:32px;height:32px;padding:0 6px;border-radius:999px;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:800;background:linear-gradient(135deg,#F59E0B,#EA580C)}
+.xp{margin:14px 0 18px;max-width:440px}
+.xp .t{display:flex;justify-content:space-between;gap:10px;font-size:15px;color:#DCE5F7;margin-bottom:7px}
+.xp .t b{color:#fff}
+.xp .b{height:12px;border-radius:999px;background:rgba(255,255,255,.15);overflow:hidden}
+.xp .b i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#FBBF24,#F97316);transition:width .6s}
+.mission{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--border)}
+.card-h+.mission{border-top:0;padding-top:0}
+.mission .chk{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--border2);color:#fff;flex:none}
+.mission.done .chk{background:var(--ok);border-color:var(--ok)}
+.mission .tx{flex:1;min-width:0}
+.mission .tx b{display:block;font-size:17px}
+.mission .tx small{font-size:14px;color:var(--text3)}
+.mission .pb{height:9px;border-radius:999px;background:var(--surface2);border:1px solid var(--border);margin-top:8px;overflow:hidden}
+.mission .pb i{display:block;height:100%;background:var(--primary);border-radius:999px}
+.mission.done .pb i{background:var(--ok)}
+.mission .rw{font-size:14px;font-weight:800;color:#C2410C;background:#FFF1E6;border-radius:999px;padding:5px 11px;white-space:nowrap}
+html[data-theme="dark"] .mission .rw{background:#3A2412;color:#FDBA74}
+.mission.done .rw{color:var(--ok);background:var(--okbg)}
+.grass{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,15px);grid-auto-columns:15px;gap:4px;overflow-x:auto;padding:2px 2px 6px}
+.grass i{border-radius:4px;background:var(--surface2);border:1px solid var(--border)}
+.grass i.l1{background:#C7D7FB;border-color:transparent}.grass i.l2{background:#86A9F2;border-color:transparent}.grass i.l3{background:#3D6EDB;border-color:transparent}.grass i.l4{background:#1B3FA8;border-color:transparent}
+.grass i.today{outline:2px solid #F97316;outline-offset:1px}
+.grass i.fut{visibility:hidden}
+.glegend{display:flex;align-items:center;gap:4px;justify-content:flex-end;font-size:13.5px;color:var(--text3);margin-top:10px}
+.glegend i{width:13px;height:13px;border-radius:3px;display:inline-block}
+.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(min-width:700px){.badges{grid-template-columns:repeat(5,1fr)}}
+.bdg{text-align:center;padding:16px 8px 14px;border-radius:16px;border:1px solid var(--border);background:var(--surface)}
+.bdg .md{width:62px;height:62px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;color:#fff;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.5),transparent 45%),var(--c);box-shadow:0 5px 14px color-mix(in srgb,var(--c) 40%,transparent),inset 0 -3px 0 rgba(0,0,0,.15)}
+.bdg .md svg{width:28px;height:28px}
+.bdg b{display:block;font-size:15.5px;line-height:1.35}
+.bdg span{display:block;font-size:13.5px;color:var(--text3);margin-top:3px;line-height:1.35}
+.bdg.lock .md{background:var(--surface2);color:var(--text3);box-shadow:none;border:2px dashed var(--border2)}
+.bdg.lock b{color:var(--text3)}
+.combo{display:inline-flex;align-items:center;gap:5px;font-weight:800;font-size:15px;color:#C2410C;background:#FFF1E6;border-radius:999px;padding:8px 12px}
+html[data-theme="dark"] .combo{background:#3A2412;color:#FDBA74}
+.xpfloat{position:fixed;left:50%;top:110px;font-weight:900;font-size:24px;color:#F97316;z-index:80;pointer-events:none;animation:xpf 1s ease-out forwards}
+@keyframes xpf{0%{opacity:0;transform:translate(-50%,10px) scale(.8)}20%{opacity:1;transform:translate(-50%,0) scale(1.15)}100%{opacity:0;transform:translate(-50%,-46px) scale(1)}}
+.flip-in{animation:flipin .38s ease-out}
+@keyframes flipin{from{transform:perspective(900px) rotateY(75deg);opacity:.2}to{transform:perspective(900px) rotateY(0);opacity:1}}
+.pop{animation:pop .4s ease-out}
+@keyframes pop{0%{transform:scale(.95)}60%{transform:scale(1.03)}100%{transform:scale(1)}}
+.confetti{position:fixed;top:-14px;width:10px;height:15px;z-index:90;pointer-events:none;border-radius:2px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(108vh) rotate(760deg)}}
+.celebrate{text-align:center;padding:8px 4px 4px}
+.celebrate .md{width:116px;height:116px;margin:4px auto 18px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:30px;font-weight:900;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.5),transparent 45%),var(--c,linear-gradient(135deg,#F59E0B,#EA580C));box-shadow:0 10px 30px rgba(234,88,12,.3)}
+.celebrate .md svg{width:50px;height:50px}
+.celebrate h2{font-size:26px;margin:0 0 6px;letter-spacing:-.03em}
+.celebrate p{font-size:17px;color:var(--text2);margin:0 0 20px}
+.gain{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.gain span{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:15.5px;border-radius:999px;padding:7px 13px;background:#FFF1E6;color:#C2410C}
+html[data-theme="dark"] .gain span{background:#3A2412;color:#FDBA74}
+.lvbig{display:flex;align-items:center;gap:18px}
+.lvbig .md{width:84px;height:84px;border-radius:50%;flex:none;display:grid;place-items:center;color:#fff;font-weight:900;font-size:26px;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.5),transparent 45%),linear-gradient(135deg,#F59E0B,#EA580C);box-shadow:0 8px 22px rgba(234,88,12,.3)}
+.lvbig .pbar{height:12px;margin-top:10px;--c:#F97316}
+.ladder{display:flex;gap:6px;flex-wrap:wrap;margin-top:16px}
+.ladder span{font-size:13.5px;font-weight:600;border-radius:999px;padding:5px 11px;background:var(--surface2);border:1px solid var(--border);color:var(--text3)}
+.ladder span.on{background:#FFF1E6;border-color:#FDBA74;color:#C2410C}
+.ladder span.done{color:var(--text2)}
+body{overflow-x:hidden}
+.btn{white-space:nowrap}
+.mtop .brand{flex:1;min-width:0}
+.mtop .brand>div:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.mtop .chip-streak,.mtop .lvchip{white-space:nowrap;flex:none}
+.mtop .chip-streak{margin-left:0}
+@media (prefers-reduced-motion: reduce){.confetti,.xpfloat{display:none}.flip-in,.pop{animation:none}}
 </style>
 </head>
 <body>
@@ -638,7 +757,7 @@ const WORDS = [
 </script>
 <script>
 /* ====================== 기본 설정 ====================== */
-const VERSION='v003';
+const VERSION='v004';
 const KEY='itword.v1';
 const INT=[0,1,2,4,7,15,30];                 // 단계별 다음 복습까지 날짜
 const STEPS=['암기','1차','연습','2차','연습','3차','완료'];
@@ -702,6 +821,9 @@ const ICONP={
  spark:'<path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3z"/><path d="M19 3v4M17 5h4"/>',
  cpu:'<rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/>',
  brief:'<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>',
+ moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+ rocket:'<path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22 22 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/>',
  eyeoff:'<path d="M17.9 17.9A10 10 0 0 1 12 20C5 20 1 12 1 12a18 18 0 0 1 5.1-5.9M9.9 4.2A9 9 0 0 1 12 4c7 0 11 8 11 8a18 18 0 0 1-2.2 3.2M1 1l22 22"/>',
  pause:'<path d="M18 6 6 18M6 6l12 12"/>',
  hand:'<path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-6-2.4l-3.6-3.6a2 2 0 0 1 2.8-2.8L7 15"/>'
@@ -713,8 +835,10 @@ const cIco=(id,sm)=>`<span class="ico ${sm?'sm':''}" style="--c:${cs_(id).c}">${
 
 /* ====================== 저장 ====================== */
 let S;
-function blank(){return{w:{},days:{},set:{daily:5,goal:20,auto:false,rate:0.9,theme:'auto',meet:'',focus:''},custom:[],edit:{},hide:{},rounds:{},best:{},cur:null,created:Date.now()}}
-function load(){try{S=JSON.parse(localStorage.getItem(KEY))||blank()}catch(e){S=blank()}const b=blank();for(const k in b)if(S[k]==null)S[k]=b[k];for(const k in b.set)if(S.set[k]==null)S.set[k]=b.set[k]}
+function blank(){return{w:{},days:{},set:{daily:5,goal:20,auto:false,rate:0.9,theme:'auto',meet:'',focus:'',fs:'m'},custom:[],edit:{},hide:{},rounds:{},best:{},cur:null,created:Date.now(),xp:0,badges:{},cnt:{},quest:{}}}
+function load(){try{S=JSON.parse(localStorage.getItem(KEY))||blank()}catch(e){S=blank()}
+  if(S.xp==null)S.xp=Object.values(S.days||{}).reduce((a,d)=>a+(d.ok||0)*10+(d.ng||0)*2,0);   // 예전 기록으로 XP 채우기
+  const b=blank();for(const k in b)if(S[k]==null)S[k]=b[k];for(const k in b.set)if(S.set[k]==null)S.set[k]=b.set[k]}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){toast('저장 공간이 부족해요. 설정에서 기록을 내보내 주세요.')}}
 load();
 
@@ -758,6 +882,48 @@ function speak(text,lang){
 }
 function sayBtn(id){return `<button class="speak noprint" onclick="event.stopPropagation();speak(BYID['${id}'].t)" aria-label="발음 듣기">${ic('sound','s')}발음</button>`}
 
+/* ====================== 레벨·XP·배지·미션 (재미 요소) ====================== */
+const LVL=[0,150,400,800,1400,2200,3300,4800,6800,9500];
+const TITLE=['IT 입문자','인턴','주니어','주니어 플러스','미들','시니어','테크 리드','아키텍트','CTO급 대화력','IT 통역사'];
+function lvOf(x){let l=0;for(let i=0;i<LVL.length;i++)if(x>=LVL[i])l=i;return l}
+function lvInfo(){const l=lvOf(S.xp),cur=LVL[l],nx=LVL[l+1];return{l,title:TITLE[l],next:nx,toNext:nx?nx-S.xp:0,p:nx?Math.round((S.xp-cur)/(nx-cur)*100):100,nextTitle:TITLE[l+1]}}
+function addXP(n,show){if(!n)return;const before=lvOf(S.xp);S.xp+=n;if(S.cur)S.cur.xp=(S.cur.xp||0)+n;if(show)floatXP(n);const after=lvOf(S.xp);if(after>before)S.pendingLv=after}
+function floatXP(n){const d=document.createElement('div');d.className='xpfloat';d.textContent='+'+n+' XP';document.body.appendChild(d);setTimeout(()=>d.remove(),1000)}
+const cntLv=m=>ALL.filter(w=>level(peek(w.id).b)>=m).length;
+const BADGES=[
+ {id:'first',n:'첫 커밋',d:'첫 학습 완료',i:'branch',c:'#2563EB',ok:()=>Object.values(S.days).some(d=>d.n>0)},
+ {id:'s3',n:'3일 연속 배포',d:'3일 연속 학습',i:'flame',c:'#F97316',ok:()=>streak()>=3},
+ {id:'s7',n:'스프린트 완주',d:'7일 연속 학습',i:'rocket',c:'#EA580C',ok:()=>streak()>=7},
+ {id:'s30',n:'무중단 운영',d:'30일 연속 학습',i:'shield',c:'#B91C1C',ok:()=>streak()>=30},
+ {id:'w30',n:'단어 30개 머지',d:'거의 익힘 30개',i:'layers',c:'#7C3AED',ok:()=>cntLv(2)>=30},
+ {id:'w100',n:'릴리즈 100',d:'거의 익힘 100개',i:'trophy',c:'#6D28D9',ok:()=>cntLv(2)>=100},
+ {id:'perfect',n:'버그 제로',d:'분야 시험 만점',i:'checkc',c:'#059669',ok:()=>(S.cnt.perfect||0)>0},
+ {id:'talk',n:'회의 통역사',d:'대화 빈칸 30개 정답',i:'chat',c:'#0D9488',ok:()=>(S.cnt.blank||0)>=30},
+ {id:'spell',n:'타이핑 장인',d:'스펠 20개 정답',i:'kbd',c:'#0284C7',ok:()=>(S.cnt.spell||0)>=20},
+ {id:'speed',n:'핫픽스 장인',d:'짝 맞추기 25초 안',i:'zap',c:'#CA8A04',ok:()=>Object.values(S.best).some(t=>t<=25)},
+ {id:'cat',n:'분야 정복',d:'한 분야 3차 완료',i:'target',c:'#DB2777',ok:()=>Object.values(S.rounds).some(r=>r.stage===6)},
+ {id:'quest',n:'미션 올클리어',d:'하루 미션 3개 완료',i:'star',c:'#E11D48',ok:()=>(S.cnt.allq||0)>0},
+ {id:'early',n:'얼리 버드',d:'아침 7시 전 학습',i:'sun',c:'#F59E0B',ok:()=>(S.cnt.early||0)>0},
+ {id:'night',n:'야간 배포',d:'밤 10시 뒤 학습',i:'moon',c:'#4F46E5',ok:()=>(S.cnt.night||0)>0},
+ {id:'lv5',n:'미들 승진',d:'레벨 5 (미들) 달성',i:'brief',c:'#0F766E',ok:()=>lvOf(S.xp)>=4}
+];
+function checkBadges(){const nw=[];BADGES.forEach(b=>{if(!S.badges[b.id]&&b.ok()){S.badges[b.id]=Date.now();nw.push(b)}});nw.forEach(()=>addXP(50));return nw}
+function qday(){const k=dkey(today());return S.quest[k]||(S.quest[k]={bl:0,dl:0,claimed:{}})}
+function quests(){const d=S.days[dkey(today())]||{n:0},q=qday();return[
+ {id:'daily',n:'오늘의 학습 끝내기',s:'복습 + 새 단어 한 번 완주',p:q.dl?1:0,t:1,xp:50},
+ {id:'goal',n:`문제 ${S.set.goal}개 풀기`,s:'어떤 학습이든 합계',p:Math.min(d.n,S.set.goal),t:S.set.goal,xp:50},
+ {id:'blank',n:'개발자 대화 빈칸 5개 맞히기',s:'회의 문장 속 용어',p:Math.min(q.bl,5),t:5,xp:50}]}
+function claimQuests(){const q=qday(),got=[];quests().forEach(m=>{if(m.p>=m.t&&!q.claimed[m.id]){q.claimed[m.id]=1;addXP(m.xp);got.push(m)}});if(Object.keys(q.claimed).length>=3)S.cnt.allq=(S.cnt.allq||0)+1;return got}
+function confetti(n){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;const cols=['#2563EB','#F97316','#10B981','#F5A524','#7C3AED','#E11D48','#0EA5E9'];for(let i=0;i<(n||70);i++){const d=document.createElement('div');d.className='confetti';d.style.left=Math.random()*100+'vw';d.style.background=cols[i%cols.length];d.style.animationDuration=(1.6+Math.random()*1.6)+'s';d.style.animationDelay=(Math.random()*.4)+'s';d.style.transform=`rotate(${Math.random()*360}deg)`;if(i%3===0){d.style.width='8px';d.style.height='8px';d.style.borderRadius='50%'}document.body.appendChild(d);setTimeout(()=>d.remove(),3800)}}
+function showCelebrate(o){closeModal();const d=document.createElement('div');d.className='modal';d.onclick=e=>{if(e.target===d)closeModal()};
+  d.innerHTML=`<div class="panel"><div class="celebrate"><div class="md pop" style="${o.c?'--c:'+o.c:''}">${o.icon}</div><h2>${o.title}</h2><p>${o.text}</p><button class="btn block" onclick="closeModal()">계속하기</button></div></div>`;document.body.appendChild(d);confetti(90)}
+function levelUp(l){showCelebrate({icon:'Lv.'+(l+1),title:`레벨 업! ${TITLE[l]}`,text:l+1<TITLE.length?`다음 목표는 「${TITLE[l+1]}」이에요. 개발자와의 대화가 한결 편해져요.`:'최고 레벨이에요. 이제 IT 통역사예요!'})}
+function grassHTML(weeks){const t=today(),dow=new Date().getDay();const start=t-dow-7*(weeks-1);let h='';for(let i=0;i<weeks*7;i++){const day=start+i;const n=(S.days[dkey(day)]||{}).n||0;const l=day>t?'fut':n===0?'':n<10?'l1':n<20?'l2':n<40?'l3':'l4';h+=`<i class="${l}${day===t?' today':''}" title="${dkey(day)} · ${n}문제"></i>`}
+  const active=Object.values(S.days).filter(d=>d.n>0).length;
+  return `<div class="grass">${h}</div><div class="glegend"><span style="margin-right:auto">공부한 날 ${active}일</span>적음 <i style="background:var(--surface2);border:1px solid var(--border)"></i><i style="background:#C7D7FB"></i><i style="background:#86A9F2"></i><i style="background:#3D6EDB"></i><i style="background:#1B3FA8"></i> 많음</div>`}
+function badgeHTML(b){const got=S.badges[b.id];return `<div class="bdg ${got?'':'lock'}" style="--c:${b.c}"><div class="md">${ic(b.i)}</div><b>${b.n}</b><span>${got?dkey(Math.floor((got-new Date(got).getTimezoneOffset()*60000)/86400000)).slice(5).replace('-','/')+' 획득':b.d}</span></div>`}
+function missionHTML(){return quests().map(m=>{const done=m.p>=m.t;return `<div class="mission ${done?'done':''}"><span class="chk">${done?ic('check','s'):''}</span><div class="tx"><b>${m.n}</b><small>${m.s} · ${m.p}/${m.t}</small><div class="pb"><i style="width:${pct(m.p,m.t)}%"></i></div></div><span class="rw">${done?'완료':'+'+m.xp+' XP'}</span></div>`}).join('')}
+
 /* ====================== 타이머 ====================== */
 let tStart=0,tAcc=0,tickId=null,running=false;
 function timerStart(acc){tAcc=acc||0;tStart=performance.now();running=true;clearInterval(tickId);tickId=setInterval(tick,500);tick()}
@@ -771,23 +937,24 @@ function slowLimit(c){const ts=c.times||[];if(ts.length<3)return 12;const avg=ts
 
 /* ====================== 화면 이동 ====================== */
 let view={name:'home'};
-const NAV=[['home','홈','home'],['cats','분야별 학습','grid'],['words','단어장','book'],['report','학습 보고서','chart'],['settings','설정','sliders']];
+const NAV=[['home','홈','home'],['cats','분야별 학습','grid'],['words','단어장','book'],['report','성장 기록','trophy'],['settings','설정','sliders']];
 function go(v){if(M&&M.iv)clearInterval(M.iv);if(tickId){if(S.cur)S.cur.acc=0;timerStop()}view=v;render();window.scrollTo(0,0)}
 function render(){
   applyTheme();
   const V={home:Home,cats:Cats,cat:Cat,study:Study,result:Result,words:Words,report:Report,settings:Settings}[view.name]||Home;
   document.body.classList.toggle('focus',view.name==='study');
   $('#app').innerHTML=V();
+  if(window.__celebrate){const cb=window.__celebrate;window.__celebrate=null;setTimeout(()=>{confetti();if(S.pendingLv){const l=S.pendingLv;S.pendingLv=0;save();setTimeout(()=>levelUp(l),500)}else if(cb.badges&&cb.badges.length){const b=cb.badges[0];showCelebrate({icon:ic(b.i),c:b.c,title:'새 배지 획득',text:`「${b.n}」 · ${b.d}`})}},150)}
   const tab={cat:'cats',study:'',result:''}[view.name]??view.name;
-  const sk=streak();
+  const sk=streak(),LI=lvInfo();
   $('#side').innerHTML=`<div class="brand"><div class="logo">IT</div><div>짬짬이 IT 영단어<small>개발자와 대화하는 용어 학습</small></div></div>
     <nav>${NAV.map(([k,n,i])=>`<button class="${tab===k?'on':''}" onclick="go({name:'${k}'})">${ic(i)}${n}</button>`).join('')}</nav>
-    <div class="foot">연속 학습<b>${sk}일</b>오늘 ${(S.days[dkey(today())]||{n:0}).n}문제 · 목표 ${S.set.goal}</div>`;
-  $('#mtop').innerHTML=`<div class="brand"><div class="logo">IT</div><div>짬짬이 IT 영단어</div></div><span class="chip-streak">${ic('flame','s')}${sk}일 연속</span>`;
-  $('#nav').innerHTML=`<div class="in">${NAV.map(([k,n,i])=>`<button class="${tab===k?'on':''}" onclick="go({name:'${k}'})">${ic(i)}${n.replace('분야별 학습','분야').replace('학습 보고서','보고서')}</button>`).join('')}</div>`;
+    <div class="foot"><div class="row" style="gap:10px;flex-wrap:nowrap"><span class="lvchip" style="padding:0;border:0;box-shadow:none;background:none"><span class="lv">Lv.${LI.l+1}</span></span><div><b style="font-size:16px">${LI.title}</b><span class="xs">${S.xp} XP</span></div></div><div class="pbar" style="--c:#F97316;margin-top:10px"><i style="width:${LI.p}%"></i></div><div class="xs" style="margin-top:10px">연속 ${sk}일 · 오늘 ${(S.days[dkey(today())]||{n:0}).n}문제</div></div>`;
+  $('#mtop').innerHTML=`<div class="brand"><div class="logo">IT</div><div>짬짬이 IT 영단어</div></div><span class="chip-streak">${ic('flame','s')}${sk}일</span><span class="lvchip" style="padding:4px 12px 4px 4px"><span class="lv" style="height:28px;min-width:28px;font-size:12px">${LI.l+1}</span>${LI.title}</span>`;
+  $('#nav').innerHTML=`<div class="in">${NAV.map(([k,n,i])=>`<button class="${tab===k?'on':''}" onclick="go({name:'${k}'})">${ic(i)}${n.replace('분야별 학습','분야').replace('성장 기록','성장')}</button>`).join('')}</div>`;
   if(view.name==='study')afterStudyRender();
 }
-function applyTheme(){const t=S.set.theme;const dark=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=dark?'dark':'light';const m=document.querySelector('meta[name=theme-color]');if(m)m.content=dark?'#0A0F1C':'#0B1B3F'}
+function applyTheme(){const t=S.set.theme;const dark=t==='dark'||(t==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=dark?'dark':'light';document.body.style.zoom={m:'',l:'1.1',xl:'1.22'}[S.set.fs]||'';const m=document.querySelector('meta[name=theme-color]');if(m)m.content=dark?'#0A0F1C':'#0B1B3F'}
 function toast(m){const d=document.createElement('div');d.className='toast';d.textContent=m;document.body.appendChild(d);setTimeout(()=>d.remove(),2200)}
 /* 응원 메시지 (경화여고 도우미의 응원 토스트) */
 const CHEER={start:['좋아요, 짧게 집중해 봐요','오늘의 학습을 시작합니다'],s3:['3문제 연속 정답','흐름이 좋아요 · 3연속'],s5:['5연속 정답 · 개발자 말이 들리기 시작해요','5문제 연속 정답이에요'],s10:['10연속 정답 · 회의에서 안 밀려요'],wrong:['괜찮아요, 곧 다시 나와요','틀린 단어가 더 오래 기억돼요','한 번 더 보면 내 말이 돼요'],half:['절반 왔어요'],near:['거의 다 왔어요']};
@@ -832,12 +999,23 @@ function Home(){
    :`<section class="hero"><div class="main">
       <div class="lbl">${ic('target','s')}오늘의 학습</div>
       <div class="nums"><div><b>${due}</b><span>복습할 단어</span></div><div class="sep"></div><div><b>${newAvail}</b><span>새 단어</span></div></div>
+      ${xpBar()}
       <p>${due+newAvail?'틀린 단어는 맞힐 때까지 다시 나오고, 맞힌 단어는 1·2·4·7·15·30일 간격으로 복습해요.':'오늘 할 학습을 모두 마쳤어요. 더 하고 싶다면 짬 학습이나 분야별 학습을 이용하세요.'}</p>
       <div class="acts"><button class="btn white" ${due+newAvail?'':'disabled'} onclick="startDaily(0)">${ic('play','s')}학습 시작</button><button class="btn glass" onclick="startDaily(10)">${ic('zap','s')}3분 짬 학습</button></div>
     </div>${ring}</section>`;
+  const gotB=BADGES.filter(b=>S.badges[b.id]);
+  const nextB=BADGES.filter(b=>!S.badges[b.id]).slice(0,Math.max(0,5-Math.min(gotB.length,5)));
+  const showB=[...gotB.slice(-5),...nextB].slice(0,5);
   return `
   <header class="ph"><div><div class="eyebrow">${dateLabel()}</div><h1>개발자와의 대화, 오늘도 한 걸음</h1><p>내가 만든 시스템 속 용어로 익혀서 회의에서 바로 쓰는 말로 만들어요.</p></div></header>
   ${hero}
+  <div class="cols">
+    <section class="card"><div class="card-h"><h3>오늘의 미션</h3><span class="sub r">완료하면 XP 보너스</span></div>${missionHTML()}</section>
+    <section class="card"><div class="card-h"><h3>학습 잔디</h3><span class="sub r">최근 15주</span></div>${grassHTML(15)}
+      <div class="card-h" style="margin:20px 0 12px"><h3 style="font-size:17px">배지 ${gotB.length} / ${BADGES.length}</h3><button class="link r" onclick="go({name:'report'})">전체 보기 ${ic('chev','s')}</button></div>
+      <div class="badges" style="grid-template-columns:repeat(5,1fr);gap:8px">${showB.map(b=>`<div class="bdg ${S.badges[b.id]?'':'lock'}" style="--c:${b.c};padding:10px 2px;border:0;background:none" title="${b.n} · ${b.d}"><div class="md" style="width:48px;height:48px;margin-bottom:6px">${ic(b.i)}</div><span style="font-size:12.5px;margin:0">${b.n}</span></div>`).join('')}</div>
+    </section>
+  </div>
   <section class="kpis">
     <div class="kpi"><div class="h"><span class="ico" style="--c:#F97316">${ic('flame','s')}</span>연속 학습</div><div class="v">${streak()}<small>일</small></div><div class="f">${streak()?'흐름을 이어 가세요':'오늘 시작해 보세요'}</div></div>
     <div class="kpi"><div class="h"><span class="ico" style="--c:#2563EB">${ic('target','s')}</span>오늘 푼 문제</div><div class="v">${d.n}<small>/ ${S.set.goal}</small></div><div class="f">하루 목표 대비 ${goalP}%</div></div>
@@ -866,6 +1044,7 @@ function Home(){
 }
 function week7(){const t=today(),ds=[];for(let i=6;i>=0;i--){const k=dkey(t-i);ds.push({k,n:(S.days[k]||{}).n||0,d:'일월화수목금토'[new Date(k+'T00:00:00').getDay()]})}const mx=Math.max(S.set.goal,...ds.map(x=>x.n));
   return `<div class="chart" style="height:92px">${ds.map((x,i)=>`<div title="${x.k} ${x.n}개"><i class="${x.n?'':'z'}" style="height:${Math.max(3,Math.round(x.n/mx*100))}%;${i===6?'':'opacity:.55'}"></i><span>${i===6?'오늘':x.d}</span></div>`).join('')}</div>`}
+function xpBar(){const L=lvInfo();return `<div class="xp"><div class="t"><span><b>Lv.${L.l+1} ${L.title}</b> · ${S.xp} XP</span><span>${L.next?`다음 레벨까지 <b>${L.toNext}</b>`:'최고 레벨'}</span></div><div class="b"><i style="width:${L.p}%"></i></div></div>`}
 function qrow(i,c,t,s,cnt,fn){return `<button class="rowbtn" onclick="${fn}"><span class="ico sm" style="--c:${c}">${ic(i,'s')}</span><div class="tx"><b>${t}</b><span>${s}</span></div>${cnt?`<span class="cnt">${cnt}</span>`:''}${ic('chev','s')}</button>`}
 
 /* ====================== 분야 ====================== */
@@ -1003,7 +1182,7 @@ function Study(){
   const q=c.queue[0],w=BYID[q.id];
   if(!w){c.queue.shift();save();return Study()}
   const total=c.done+c.queue.length;
-  const top=`<div class="s-top"><button class="iconbtn" onclick="pauseStudy()" aria-label="멈추기" title="멈추기">${ic('x')}</button><div class="tt"><b>${esc(sessionName(c))}</b><span>${c.done+1} / ${total}${c.kind==='test'?' · 시험 모드':''}</span></div><span class="timer" id="timer">${ic('clock','s')}<b>00:00</b></span></div>
+  const top=`<div class="s-top"><button class="iconbtn" onclick="pauseStudy()" aria-label="멈추기" title="멈추기">${ic('x')}</button><div class="tt"><b>${esc(sessionName(c))}</b><span>${c.done+1} / ${total}${c.kind==='test'?' · 시험 모드':''}</span></div>${(c.run||0)>=2&&c.kind!=='test'?`<span class="combo pop">${ic('flame','s')}${c.run}콤보</span>`:''}<span class="timer" id="timer">${ic('clock','s')}<b>00:00</b></span></div>
   <div class="prog"><i style="width:${pct(c.done,total)}%"></i></div>`;
   let body='';
   if(q.type==='card')body=CardView(c,q,w);
@@ -1036,7 +1215,7 @@ function CardView(c,q,w){
       <div class="hint">${ic('hand','s')}눌러서 뜻 보기</div></div>
     <div class="two"><button class="btn badb" onclick="answerCard(false)">${ic('x','s')}몰라요</button><button class="btn" onclick="answerCard(true)">${ic('check','s')}알아요</button></div>
     <p class="xs faint" style="text-align:center;margin-top:12px">뒤집어 확인한 뒤 판단해도 되고, 바로 눌러도 돼요.</p>`;
-  return `<div class="qcard">${explain(w)}</div>
+  return `<div class="qcard flip-in">${explain(w)}</div>
     <div class="two"><button class="btn badb" onclick="answerCard(false)">${ic('x','s')}몰라요</button><button class="btn" onclick="answerCard(true)">${ic('check','s')}알아요</button></div>`;
 }
 function flip(){S.cur.shown=true;save();render()}
@@ -1092,6 +1271,9 @@ function record(ok,t,qq){
   else{if(!ok)grade(q.id,false);else st(q.id).ok++}
   if(ok&&first)c.ok++;if(!ok)c.ng++;
   if(c.kind!=='test'){if(ok){c.run=(c.run||0)+1;if(c.run===3)cheer('s3');else if(c.run===5)cheer('s5');else if(c.run===10)cheer('s10')}else{c.run=0;cheer('wrong')}}
+  // XP·카운터 (배지·미션용)
+  if(ok){const bonus=c.kind!=='test'&&(c.run||0)>=5?5:0;addXP((slow?6:10)+bonus,c.kind!=='test');if(q.type==='blank'){S.cnt.blank=(S.cnt.blank||0)+1;qday().bl++}if(q.type==='spell')S.cnt.spell=(S.cnt.spell||0)+1}else addXP(2);
+  {const h=new Date().getHours();if(h>=22)S.cnt.night=(S.cnt.night||0)+1;if(h<7)S.cnt.early=(S.cnt.early||0)+1}
   logDay(1,ok?1:0,ok?0:1,t);
   st(q.id).t=Math.round(t);
   return slow;
@@ -1102,8 +1284,8 @@ function answerCard(known){
   c.times.push(Math.min(t,SLOW_MAX));c.sec+=t;
   const x=st(q.id),tday=today();const first=!c.graded[q.id];c.graded[q.id]=1;
   if(!x.fs)x.fs=tday;
-  if(known){if(first&&!c.miss[q.id]&&x.b===0){x.b=2;x.due=tday+INT[2]}else if(first&&!c.miss[q.id]){x.b=Math.min(6,x.b+1);x.due=tday+INT[x.b]}else if(x.b===0){x.b=1;x.due=tday+1}else if(x.due<=tday){x.due=tday+1}c.done++;if(first)c.ok++;x.ok++}
-  else{x.b=1;x.due=tday;x.ng++;c.ng++;c.queue.unshift(q);requeue(c,c.queue.shift())}
+  if(known){if(first&&!c.miss[q.id]&&x.b===0){x.b=2;x.due=tday+INT[2]}else if(first&&!c.miss[q.id]){x.b=Math.min(6,x.b+1);x.due=tday+INT[x.b]}else if(x.b===0){x.b=1;x.due=tday+1}else if(x.due<=tday){x.due=tday+1}c.done++;if(first)c.ok++;x.ok++;addXP(first?6:3,true);c.run=(c.run||0)+1;if(c.run===3)cheer('s3');else if(c.run===5)cheer('s5');else if(c.run===10)cheer('s10')}
+  else{x.b=1;x.due=tday;x.ng++;c.ng++;c.queue.unshift(q);requeue(c,c.queue.shift());addXP(1);c.run=0}
   logDay(1,known?1:0,known?0:1,t);
   c.shown=false;c.acc=0;save();render();
 }
@@ -1147,12 +1329,18 @@ function finishStudy(){
     cs.r[c.r]={n:ids.length,ok,avg,pool,res:c.res,at:Date.now()};
     ids.forEach(id=>{if(c.res[id].ok&&!c.res[id].slow){const x=st(id);x.b=Math.min(6,Math.max(x.b,1)+1);x.due=today()+INT[x.b];if(!x.fs)x.fs=today()}else if(c.res[id].ok){const x=st(id);x.b=Math.max(1,x.b);x.due=today()+1;if(!x.fs)x.fs=today()}});
     cs.stage=pool.length&&c.r<2?(c.r*2+2):6;
+    if(ok===ids.length&&ids.length>=4){S.cnt.perfect=(S.cnt.perfect||0)+1;addXP(100)}
     S.last={kind:'test',cat:c.cat,r:c.r,n:ids.length,ok,avg,pool,res:c.res};
   }else{
     if(c.kind==='card'){const cs=catState(c.cat);if(cs.stage===0)cs.stage=1}
     if(c.kind==='practice'){const cs=catState(c.cat);cs.stage=c.r*2+3}
     S.last={kind:c.kind,label:sessionName(c),n:c.done,ok:c.ok,ng:c.ng,sec:c.sec,miss:Object.keys(c.miss),cat:c.cat};
   }
+  if(c.kind==='daily')qday().dl=1;
+  addXP(30);
+  const qs=claimQuests(),nb=checkBadges();
+  S.last.xp=c.xp||0;S.last.quests=qs.map(m=>m.n);S.last.badges=nb.map(b=>b.id);
+  window.__celebrate={badges:nb};
   S.cur=null;save();
   view={name:'result'};document.body.classList.remove('focus');return Result();
 }
@@ -1165,7 +1353,8 @@ function Result(){
     return `<div class="study"><header class="ph"><div><div class="eyebrow">${esc(c.name)}</div><h1>${L.r+1}차 시험 결과</h1></div></header>
     <section class="card"><div class="row" style="gap:16px"><span class="ico" style="--c:${pct(L.ok,L.n)>=80?'#10B981':'#2563EB'};width:52px;height:52px">${ic('trophy','l')}</span><div><div class="big-status">${L.ok} / ${L.n} 정답 · ${pct(L.ok,L.n)}%</div><div class="sm faint">평균 ${fmt(L.avg)} · 오답 ${wrong.length} · 맞았지만 오래 고민 ${slow.length}</div></div></div>
       <p class="muted" style="margin:16px 0">${L.pool.length&&L.r<2?`오답과 오래 고민한 단어 ${L.pool.length}개를 연습한 뒤 ${L.r+2}차 시험을 봐요.`:L.pool.length?'3차까지 마쳤어요. 남은 단어는 "오늘의 학습"에서 계속 복습으로 나와요.':'모두 빠르게 맞혔어요. 이 분야는 완료입니다.'}</p>
-      <div class="two" style="margin-top:0"><button class="btn sec" onclick="go({name:'cat',cat:'${L.cat}'})">분야 화면</button><button class="btn" onclick="nextAction('${L.cat}')">${stageLabel(L.cat)}</button></div></section>
+      ${gainHTML(L)}
+      <div class="two" style="margin-top:16px"><button class="btn sec" onclick="go({name:'cat',cat:'${L.cat}'})">분야 화면</button><button class="btn" onclick="nextAction('${L.cat}')">${stageLabel(L.cat)}</button></div></section>
     ${wrong.length?`<div class="sec-t">오답</div><div class="wl">${wrong.map(id=>missRow(id,L.res[id])).join('')}</div>`:''}
     ${slow.length?`<div class="sec-t">맞혔지만 오래 고민한 단어</div><div class="wl">${slow.map(id=>missRow(id,L.res[id])).join('')}</div>`:''}</div>`;
   }
@@ -1173,9 +1362,13 @@ function Result(){
   return `<div class="study"><header class="ph"><div><div class="eyebrow">${esc(L.label)}</div><h1>${L.kind==='card'?'암기를 마쳤어요':'학습을 마쳤어요'}</h1></div></header>
   <section class="card"><div class="mini" style="margin-top:0"><div><span>푼 문제</span><b>${L.n}</b></div><div><span>한 번에 맞힘</span><b>${L.ok}</b></div><div><span>다시 나온 단어</span><b>${missed.length}</b></div><div><span>걸린 시간</span><b>${fmt(L.sec)}</b></div></div>
   <p class="muted" style="margin:16px 0">${missed.length?`틀렸던 ${missed.length}개는 맞힐 때까지 반복했고, 내일 다시 복습으로 나와요.`:'한 번도 틀리지 않았어요.'} 오늘 ${d.n}문제 · 목표 ${S.set.goal} · 연속 ${streak()}일</p>
+  ${gainHTML(L)}<div style="height:16px"></div>
   ${L.kind==='card'&&L.cat?`<div class="two" style="margin-top:0"><button class="btn sec" onclick="go({name:'home'})">홈으로</button><button class="btn" onclick="nextAction('${L.cat}')">${stageLabel(L.cat)}</button></div>`:`<button class="btn block" onclick="go({name:'home'})">홈으로</button>`}</section>
   ${missed.length?`<div class="sec-t">틀렸던 단어</div><div class="wl">${missed.map(id=>missRow(id)).join('')}</div>`:''}</div>`;
 }
+function gainHTML(L){const LI=lvInfo();const bs=(L.badges||[]).map(id=>BADGES.find(b=>b.id===id)).filter(Boolean);
+  return `<div class="gain"><span>${ic('zap','s')}+${L.xp||0} XP</span>${(L.quests||[]).map(n=>`<span style="background:var(--okbg);color:var(--ok)">${ic('check','s')}미션: ${esc(n)}</span>`).join('')}${bs.map(b=>`<span style="background:color-mix(in srgb,${b.c} 14%,transparent);color:${b.c}">${ic(b.i,'s')}배지: ${b.n}</span>`).join('')}</div>
+  <div style="margin-top:14px"><div class="row sm" style="justify-content:space-between"><b>Lv.${LI.l+1} ${LI.title}</b><span class="faint">${LI.next?'다음 레벨까지 '+LI.toNext+' XP':'최고 레벨'}</span></div><div class="pbar" style="--c:#F97316;height:10px;margin-top:8px"><i style="width:${LI.p}%"></i></div></div>`}
 function missRow(id,r){const w=BYID[id];if(!w)return'';
   return `<div class="it" onclick="openWord('${id}')"><span class="dot" style="background:${cs_(w.c).c}"></span><div class="tx"><b>${esc(w.t)}</b><em>${esc(w.p||'')}</em><div>${esc(w.k)}</div></div>${r?`<span class="badge ${r.ok?'warn':'bad'}">${r.ok?fmt(r.t)+' 고민':'내 답: '+esc(r.sel)}</span>`:''}</div>`}
 
@@ -1200,7 +1393,7 @@ function tapTile(i){
   if(M.sel==null||M.sel===i){M.sel=M.sel===i?null:i;renderMatch();return}
   const a=M.tiles[M.sel],b=M.tiles[i];
   if(a.id===b.id&&a.side!==b.side){M.gone[M.sel]=1;M.gone[i]=1;M.sel=null;
-    if(Object.keys(M.gone).length===M.tiles.length){clearInterval(M.iv);const t=(performance.now()-M.start)/1000+M.wrong*3;const k=M.c||'_all';const best=S.best[k];const isBest=!best||t<best;if(isBest)S.best[k]=t;logDay(6,6-Math.min(6,M.wrong),Math.min(6,M.wrong),t);save();
+    if(Object.keys(M.gone).length===M.tiles.length){clearInterval(M.iv);const t=(performance.now()-M.start)/1000+M.wrong*3;const k=M.c||'_all';const best=S.best[k];const isBest=!best||t<best;if(isBest)S.best[k]=t;logDay(6,6-Math.min(6,M.wrong),Math.min(6,M.wrong),t);addXP(isBest?30:20);claimQuests();const nbm=checkBadges();save();setTimeout(()=>{confetti();if(S.pendingLv){const l=S.pendingLv;S.pendingLv=0;save();setTimeout(()=>levelUp(l),500)}else if(nbm.length)showCelebrate({icon:ic(nbm[0].i),c:nbm[0].c,title:'새 배지 획득',text:`「${nbm[0].n}」 · ${nbm[0].d}`})},150);
       document.body.classList.remove('focus');
       $('#app').innerHTML=`<div class="study"><header class="ph"><div><div class="eyebrow">짝 맞추기</div><h1>모두 연결했어요</h1></div></header>
       <section class="card"><div class="row" style="gap:16px"><span class="ico" style="--c:#7C3AED;width:52px;height:52px">${ic('trophy','l')}</span><div><div class="big-status">${fmt(t)}</div><div class="sm faint">${isBest?'새 최고 기록이에요':'최고 기록 '+fmt(best)}${M.wrong?` · 틀린 연결 ${M.wrong}번`:''}</div></div></div>
@@ -1300,8 +1493,15 @@ function Report(){
   const dn=ddayN();if(dn>0)plan.push(`개발자 미팅까지 ${dn}일 남았어요. 새 단어 ${lv[0]}개를 모두 보려면 하루 ${Math.ceil(lv[0]/dn)}개씩이에요. 설정의 "하루 새 단어 수"를 맞춰 두세요.`);
   if(!plan.length)plan.push('지금처럼 하루 한 번 "오늘의 학습"만 해도 충분해요.');
   REPORT_TXT=`[짬짬이 IT 영단어] ${dkey(t)}\n상태: ${overall}\n내 말 됐음 ${lv[3]}/${total} · 거의 익힘 ${lv[2]} · 익히는 중 ${lv[1]}\n푼 문제 ${sumN}개 · 정답률 ${pct(sumOk,sumN)}% · 연속 ${streak()}일\n헷갈린 단어: ${confused.slice(0,5).map(w=>w.t).join(', ')||'없음'}`;
-  return `<header class="ph"><div><div class="eyebrow">학습 보고서 · ${dkey(t)}</div><h1>${overall}</h1><p>시작한 단어 ${started} / ${total}</p></div>
+  const LI=lvInfo();
+  return `<header class="ph"><div><div class="eyebrow">성장 기록 · ${dkey(t)}</div><h1>${overall}</h1><p>시작한 단어 ${started} / ${total}</p></div>
     <div class="act noprint"><button class="btn sec sm" onclick="shareReport()">${ic('share','s')}공유</button><button class="btn sec sm" onclick="window.print()">${ic('print','s')}인쇄</button></div></header>
+  <section class="card"><div class="lvbig"><div class="md">Lv.${LI.l+1}</div><div style="flex:1;min-width:0"><div class="sm faint">나의 IT 대화 레벨</div><div style="font-size:24px;font-weight:800;letter-spacing:-.03em">${LI.title}</div>
+    <div class="pbar"><i style="width:${LI.p}%"></i></div><div class="sm muted" style="margin-top:8px">${S.xp} XP${LI.next?` · 「${LI.nextTitle}」까지 ${LI.toNext} XP`:' · 최고 레벨'}</div></div></div>
+    <div class="ladder">${TITLE.map((n,i)=>`<span class="${i===LI.l?'on':i<LI.l?'done':''}">${i+1}. ${n}</span>`).join('')}</div>
+    <p class="xs faint" style="margin:14px 0 0">XP 얻는 법: 정답 10 · 5콤보 이상 +5 · 학습 완료 30 · 미션 50 · 배지 50 · 시험 만점 100</p></section>
+  <section class="card"><div class="card-h"><h3>배지</h3><span class="sub r">${Object.keys(S.badges).length} / ${BADGES.length} 획득</span></div><div class="badges">${BADGES.map(badgeHTML).join('')}</div></section>
+  <section class="card"><div class="card-h"><h3>학습 잔디</h3><span class="sub r">최근 26주</span></div>${grassHTML(26)}</section>
   <section class="kpis">
     <div class="kpi"><div class="h"><span class="ico" style="--c:#2563EB">${ic('target','s')}</span>푼 문제</div><div class="v">${sumN}</div><div class="f">누적</div></div>
     <div class="kpi"><div class="h"><span class="ico" style="--c:#10B981">${ic('checkc','s')}</span>정답률</div><div class="v">${sumN?pct(sumOk,sumN):'–'}<small>${sumN?'%':''}</small></div><div class="f">맞힘 ${sumOk}</div></div>
@@ -1343,6 +1543,7 @@ function Settings(){
   <section class="group"><h4>소리 · 화면</h4>
     ${srow('발음 자동 재생','카드가 나오면 바로 읽기',`<label class="switch"><input type="checkbox" ${S.set.auto?'checked':''} onchange="S.set.auto=this.checked;save()"><i></i></label>`)}
     ${srow('발음 속도','',sel([[0.7,'천천히'],[0.9,'보통'],[1.1,'빠르게']],S.set.rate,"S.set.rate=+this.value;save();speak('deploy')"))}
+    ${srow('글자 크기','화면 전체를 더 크게',sel([['m','기본 (크게)'],['l','더 크게'],['xl','아주 크게']],S.set.fs,'S.set.fs=this.value;save();render()'))}
     ${srow('화면 테마','',sel([['auto','기기 설정 따라'],['light','라이트'],['dark','다크']],S.set.theme,'S.set.theme=this.value;save();render()'))}
   </section>
   <section class="group"><h4>앱 설치</h4>
