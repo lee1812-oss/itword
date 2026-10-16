@@ -1,0 +1,15 @@
+{
+  "name": "짬짬이 IT 영단어",
+  "short_name": "IT 영단어",
+  "description": "개발자와 이야기할 때 막히지 않도록, 내가 만든 시스템 속 IT 용어를 반복 학습하는 앱",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBFBF8",
+  "theme_color": "#24305E",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
