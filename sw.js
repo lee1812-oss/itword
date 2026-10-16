@@ -1,6 +1,6 @@
 /* 짬짬이 IT 영단어 - 화면 파일을 기기에 저장해 인터넷 없이도 열리게 함.
    앱을 고치면 아래 VERSION 번호를 올려야 휴대폰이 새 파일을 받음 */
-const VERSION = 'itword-v002';
+const VERSION = 'itword-v003';
 const FILES = ['./', 'index.html', 'words.js', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
