@@ -1,6 +1,6 @@
 /* 짬짬이 IT 영단어 - 인터넷이 되면 항상 최신 화면을 받고, 끊겼을 때만 저장본을 보여 줌.
    앱을 고치면 아래 VERSION 번호도 함께 올림 */
-const VERSION = 'itword-v005';
+const VERSION = 'itword-v006';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(FILES.map(f => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting()));
